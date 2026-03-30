@@ -31,9 +31,15 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-2 group">
-          <Scissors className="text-gold w-8 h-8 group-hover:rotate-12 transition-transform" />
-          <span className="font-serif text-2xl font-bold tracking-widest text-white uppercase">Garrison</span>
+        <Link to="/" className="flex items-center gap-3 group">
+          <div className="relative w-10 h-10 flex items-center justify-center">
+            <div className="absolute inset-0 border-2 border-gold rotate-45 group-hover:rotate-90 transition-transform duration-500"></div>
+            <span className="font-serif text-xl font-bold text-gold relative z-10">G</span>
+          </div>
+          <div className="flex flex-col">
+            <span className="font-serif text-xl font-bold tracking-[0.2em] text-white uppercase leading-none">Garrison</span>
+            <span className="text-[8px] tracking-[0.4em] text-gold uppercase font-bold">Barbershop</span>
+          </div>
         </Link>
 
         {/* Desktop Nav */}
